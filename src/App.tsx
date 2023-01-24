@@ -1,9 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react"
+import reactLogo from "./assets/react.svg"
+import "./App.css"
+import countRaces from "./libs/countRaces"
 
 function App() {
   const [count, setCount] = useState(0)
+
+  console.log(countRaces(25, 3))
 
   return (
     <div className="App">
